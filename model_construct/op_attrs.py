@@ -1,0 +1,1 @@
+CONV2D_OP = "qnn.conv2d"

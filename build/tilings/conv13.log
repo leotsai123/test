@@ -1,0 +1,49 @@
+callnode: qnn.conv2d stride: 1, 1
+	oc group idx: 0
+		i_tile_coord(h,w): (0, 0)
+		i_tile_shape: (2, 2, 128)
+		i_tile_offset: 0
+		o_tile_coord(h,w): (0, 0)
+		o_tile_shape: (2, 2, 32)
+		o_tile_offset: 0
+		padding: [0, 0, 0, 0]
+		weight_offset: 0
+		bias_offset: 0
+		scale_offset: -1
+
+	oc group idx: 1
+		i_tile_coord(h,w): (0, 0)
+		i_tile_shape: (2, 2, 128)
+		i_tile_offset: 0
+		o_tile_coord(h,w): (0, 0)
+		o_tile_shape: (2, 2, 32)
+		o_tile_offset: 64
+		padding: [0, 0, 0, 0]
+		weight_offset: 4096
+		bias_offset: 128
+		scale_offset: -1
+
+	oc group idx: 2
+		i_tile_coord(h,w): (0, 0)
+		i_tile_shape: (2, 2, 128)
+		i_tile_offset: 0
+		o_tile_coord(h,w): (0, 0)
+		o_tile_shape: (2, 2, 32)
+		o_tile_offset: 128
+		padding: [0, 0, 0, 0]
+		weight_offset: 8192
+		bias_offset: 256
+		scale_offset: -1
+
+	oc group idx: 3
+		i_tile_coord(h,w): (0, 0)
+		i_tile_shape: (2, 2, 128)
+		i_tile_offset: 0
+		o_tile_coord(h,w): (0, 0)
+		o_tile_shape: (2, 2, 32)
+		o_tile_offset: 192
+		padding: [0, 0, 0, 0]
+		weight_offset: 12288
+		bias_offset: 384
+		scale_offset: -1
+

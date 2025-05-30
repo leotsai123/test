@@ -1,0 +1,13 @@
+callnode: qnn.conv2d stride: 1, 1
+	oc group idx: 0
+		i_tile_coord(h,w): (0, 0)
+		i_tile_shape: (8, 8, 64)
+		i_tile_offset: 0
+		o_tile_coord(h,w): (0, 0)
+		o_tile_shape: (8, 8, 32)
+		o_tile_offset: 0
+		padding: [0, 0, 0, 0]
+		weight_offset: 0
+		bias_offset: 0
+		scale_offset: -1
+
